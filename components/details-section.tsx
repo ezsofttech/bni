@@ -133,15 +133,18 @@ export default function DetailsSection({ language }: DetailsSectionProps) {
               </p>
             </div>
 
-            <motion.button
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeZhflftQ88Wr0r6GM-VBov0vfFxYROeIWNSKUcIZyDce__8w/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="mt-6 sm:mt-8 px-6 sm:px-8 py-2.5 sm:py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:shadow-lg transition-shadow active:scale-95 text-sm sm:text-base"
+              className="inline-block mt-6 sm:mt-8 px-6 sm:px-8 py-2.5 sm:py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:shadow-lg transition-shadow active:scale-95 text-sm sm:text-base"
             >
               {language === "en" ? "Register Now" : "अभी रजिस्टर करें"}
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>

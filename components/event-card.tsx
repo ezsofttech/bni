@@ -145,7 +145,7 @@ export default function EventCard({ event, language, index }: EventCardProps) {
 
             {/* Entry fee */}
             <motion.div
-              className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-accent/20 flex justify-between items-center"
+              className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-accent/20 flex justify-between items-center mb-3 sm:mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -157,6 +157,20 @@ export default function EventCard({ event, language, index }: EventCardProps) {
                 {event.fee}
               </span>
             </motion.div>
+
+            {/* Register button */}
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeZhflftQ88Wr0r6GM-VBov0vfFxYROeIWNSKUcIZyDce__8w/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              className="w-full mt-auto px-4 sm:px-6 py-2.5 sm:py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors active:scale-95 text-center text-sm sm:text-base"
+            >
+              {language === "en" ? "Register Now" : "अभी रजिस्टर करें"}
+            </motion.a>
           </div>
         </div>
       </motion.div>
