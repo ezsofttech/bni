@@ -29,15 +29,15 @@ export default function Home() {
     <main className="min-h-screen bg-background overflow-hidden">
       <Header language={language} onLanguageChange={setLanguage} />
       <HeroSection language={language} />
-      <DetailsSection language={language} />
-      <ThemesSection language={language} />
-      <HighlightsSection language={language} />
-      <StallCategoriesSection language={language} />
-      <CompaniesSection language={language} />
+      {/* <DetailsSection language={language} /> */}
+      {/* <ThemesSection language={language} /> */}
+      {/* <HighlightsSection language={language} /> */}
+      {/* <StallCategoriesSection language={language} /> */}
+      {/* <CompaniesSection language={language} /> */}
       <EventGrid language={language} />
       <LocationSection language={language} />
-      <SocialImpactSection language={language} />
-      <ContactSection language={language} />
+      {/* <SocialImpactSection language={language} /> */}
+      {/* <ContactSection language={language} /> */}
       <FAQSection language={language} />
       <Footer language={language} />
     </main>

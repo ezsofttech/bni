@@ -27,14 +27,14 @@ export default function FAQSection({ language }: FAQSectionProps) {
       answerHi:
         "मेला 29 जनवरी से 3 फरवरी, 2026 तक प्रतिदिन सुबह 10:00 बजे से रात 9:00 बजे तक चलता है। इन घंटों के दौरान सभी आगंतुक स्टॉल देखने, गतिविधियों में भाग लेने और सांस्कृतिक कार्यक्रमों का आनंद लेने के लिए आमंत्रित हैं।",
     },
-    {
-      questionEn: "Is there a mobile app for the fair?",
-      questionHi: "क्या मेले के लिए मोबाइल ऐप है?",
-      answerEn:
-        "Yes! A dedicated mobile application has been launched for the fair, providing comprehensive information about stalls, event schedules, fairground maps, and registration details. The app allows users to easily navigate the fair and access all event information at their fingertips.",
-      answerHi:
-        "हां! मेले के लिए एक विशेष मोबाइल एप्लिकेशन लॉन्च किया गया है, जो स्टॉल, कार्यक्रम समय सारणी, मेला मैदान के नक्शे और पंजीकरण विवरण के बारे में व्यापक जानकारी प्रदान करता है। ऐप उपयोगकर्ताओं को मेले में आसानी से नेविगेट करने और सभी कार्यक्रम जानकारी तक पहुंचने की अनुमति देता है।",
-    },
+    // {
+    //   questionEn: "Is there a mobile app for the fair?",
+    //   questionHi: "क्या मेले के लिए मोबाइल ऐप है?",
+    //   answerEn:
+    //     "Yes! A dedicated mobile application has been launched for the fair, providing comprehensive information about stalls, event schedules, fairground maps, and registration details. The app allows users to easily navigate the fair and access all event information at their fingertips.",
+    //   answerHi:
+    //     "हां! मेले के लिए एक विशेष मोबाइल एप्लिकेशन लॉन्च किया गया है, जो स्टॉल, कार्यक्रम समय सारणी, मेला मैदान के नक्शे और पंजीकरण विवरण के बारे में व्यापक जानकारी प्रदान करता है। ऐप उपयोगकर्ताओं को मेले में आसानी से नेविगेट करने और सभी कार्यक्रम जानकारी तक पहुंचने की अनुमति देता है।",
+    // },
     {
       questionEn: "What is the entry fee?",
       questionHi: "प्रवेश शुल्क क्या है?",
