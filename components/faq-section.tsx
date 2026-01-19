@@ -69,7 +69,7 @@ export default function FAQSection({ language }: FAQSectionProps) {
   ]
 
   return (
-    <section className="relative w-full py-20 bg-card/30">
+    <section className="relative w-full py-20 bg-card/30 z-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

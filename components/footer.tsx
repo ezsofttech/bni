@@ -10,7 +10,7 @@ interface FooterProps {
 export default function Footer({ language }: FooterProps) {
   return (
     <motion.footer
-      className="bg-gradient-to-t from-card/50 to-background border-t border-accent/30 py-10 sm:py-16"
+      className="relative bg-gradient-to-t from-card/50 to-background border-t border-accent/30 py-10 sm:py-16 z-10"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -106,10 +106,23 @@ export default function Footer({ language }: FooterProps) {
           transition={{ delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p>
+          <p className="mb-2">
             {language === "en"
               ? "© 2026 BNI Bilaspur Vyapar Evam Udyog Mela. Connecting Businesses, Building Communities."
               : "© 2026 बीएनआई बिलासपुर व्यापार एवं उद्योग मेला। व्यवसायों को जोड़ना, समुदायों का निर्माण।"}
+          </p>
+          <p>
+            {language === "en" ? "Made with" : "से बनाया गया"}
+            <span className="text-red-500 mx-1">❤️</span>
+            {language === "en" ? "by" : ""}
+            <a
+              href="https://www.ezsofttech.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent/80 font-semibold transition-colors ml-1"
+            >
+              Ez Soft Tech
+            </a>
           </p>
         </motion.div>
       </div>

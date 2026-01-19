@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 interface EventCardProps {
   event: any
@@ -12,7 +13,6 @@ interface EventCardProps {
 
 export default function EventCard({ event, language, index }: EventCardProps) {
   const [isHovered, setIsHovered] = useState(false)
-  const [isExpanded, setIsExpanded] = useState(false)
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -27,16 +27,18 @@ export default function EventCard({ event, language, index }: EventCardProps) {
   }
 
   const getIconColor = () => {
-    if (event.titleEn.includes("Singing")) return "bg-blue-500/30 text-blue-500"
+    if (event.titleEn.includes("Singing") || event.titleEn.includes("Rising Star")) return "bg-blue-500/30 text-blue-500"
     if (event.titleEn.includes("Dance")) return "bg-pink-500/30 text-pink-500"
     if (event.titleEn.includes("Painting") || event.titleEn.includes("Coloring") || event.titleEn.includes("Rangoli"))
       return "bg-purple-500/30 text-purple-500"
-    if (event.titleEn.includes("Cooking")) return "bg-orange-500/30 text-orange-500"
+    if (event.titleEn.includes("Cooking") || event.titleEn.includes("Master Chef") || event.titleEn.includes("Chef"))
+      return "bg-orange-500/30 text-orange-500"
     if (event.titleEn.includes("Science")) return "bg-cyan-500/30 text-cyan-500"
     if (event.titleEn.includes("Marathon")) return "bg-green-500/30 text-green-500"
     if (event.titleEn.includes("Startup")) return "bg-yellow-500/30 text-yellow-500"
     if (event.titleEn.includes("Yoga")) return "bg-red-500/30 text-red-500"
     if (event.titleEn.includes("Job")) return "bg-indigo-500/30 text-indigo-500"
+    if (event.titleEn.includes("Makeup") || event.titleEn.includes("MUA")) return "bg-rose-500/30 text-rose-500"
     return "bg-accent/30 text-accent"
   }
 
@@ -47,18 +49,14 @@ export default function EventCard({ event, language, index }: EventCardProps) {
       onMouseLeave={() => setIsHovered(false)}
       className="group relative"
     >
-      <motion.div
-        className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-br from-card to-card/50 border border-accent/30 h-full flex flex-col cursor-pointer transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95 sm:active:scale-100"
-        animate={{
-          borderColor: isHovered ? "var(--accent)" : "var(--accent-30%)",
-          boxShadow: isHovered ? "0 25px 50px rgba(212, 175, 55, 0.15)" : "0 10px 30px rgba(0, 0, 0, 0.2)",
-        }}
-        onClick={(e) => {
-          if (window.innerWidth >= 640) {
-            setIsExpanded(!isExpanded)
-          }
-        }}
-      >
+      <Link href={`/events/${event.slug}`} className="block h-full">
+        <motion.div
+          className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-br from-card to-card/50 border border-accent/30 h-full flex flex-col cursor-pointer transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95 sm:active:scale-100"
+          animate={{
+            borderColor: isHovered ? "var(--accent)" : "var(--accent-30%)",
+            boxShadow: isHovered ? "0 25px 50px rgba(212, 175, 55, 0.15)" : "0 10px 30px rgba(0, 0, 0, 0.2)",
+          }}
+        >
         <div className="relative w-full h-40 sm:h-56 overflow-hidden bg-gradient-to-br from-accent/20 to-background/30">
           <Image
             src={event.image || "/placeholder.svg?height=224&width=400&query=event"}
@@ -107,41 +105,9 @@ export default function EventCard({ event, language, index }: EventCardProps) {
 
             <p className="text-accent font-semibold mb-3 sm:mb-4 text-xs sm:text-sm">{event.date}</p>
 
-            <motion.p
-              initial={{ maxHeight: "3rem", overflow: "hidden" }}
-              animate={{
-                maxHeight: window.innerWidth < 640 || isHovered || isExpanded ? "100%" : "3rem",
-              }}
-              transition={{ duration: 0.3 }}
-              className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6"
-            >
+            <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 line-clamp-3">
               {language === "en" ? event.descriptionEn : event.descriptionHi}
-            </motion.p>
-
-            {/* Rules section */}
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: window.innerWidth < 640 || isHovered || isExpanded ? 1 : 0,
-                height: window.innerWidth < 640 || isHovered || isExpanded ? "auto" : 0,
-              }}
-              transition={{ duration: 0.3 }}
-              className="overflow-hidden"
-            >
-              <div className="pt-3 sm:pt-4 border-t border-accent/20">
-                <p className="font-semibold text-foreground mb-2 sm:mb-3 text-xs sm:text-sm">
-                  {language === "en" ? "Key Details:" : "मुख्य विवरण:"}
-                </p>
-                <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-xs text-muted-foreground">
-                  {(language === "en" ? event.rulesEn : event.rulesHi).map((rule: string, idx: number) => (
-                    <li key={idx} className="flex gap-2">
-                      <span className="text-accent min-w-fit">✓</span>
-                      <span>{rule}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
+            </p>
 
             {/* Entry fee */}
             <motion.div
@@ -158,22 +124,21 @@ export default function EventCard({ event, language, index }: EventCardProps) {
               </span>
             </motion.div>
 
-            {/* Register button */}
-            <motion.a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeZhflftQ88Wr0r6GM-VBov0vfFxYROeIWNSKUcIZyDce__8w/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
+            {/* View Details button */}
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="w-full mt-auto px-4 sm:px-6 py-2.5 sm:py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors active:scale-95 text-center text-sm sm:text-base"
+              className="w-full mt-auto"
             >
-              {language === "en" ? "Register Now" : "अभी रजिस्टर करें"}
-            </motion.a>
+              <div className="w-full px-4 sm:px-6 py-2.5 sm:py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors active:scale-95 text-center text-sm sm:text-base">
+                {language === "en" ? "View Details" : "विवरण देखें"}
+              </div>
+            </motion.div>
           </div>
         </div>
       </motion.div>
+      </Link>
     </motion.div>
   )
 }

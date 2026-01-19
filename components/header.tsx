@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 interface HeaderProps {
@@ -18,29 +19,31 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
       transition={{ duration: 0.6 }}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center gap-2 sm:gap-4">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 }}
-          className="flex items-center gap-2 cursor-pointer min-w-fit"
-        >
-          <div className="relative w-24 sm:w-32 h-auto flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="BNI Bilaspur South Logo"
-              width={128}
-              height={64}
-              className="object-contain w-full h-auto"
-              priority
-            />
-          </div>
-          <div className="hidden sm:block">
-            <div className="font-bold text-sm sm:text-lg text-foreground leading-tight">
-              {language === "en" ? "BNI Bilaspur" : "बीएनआई बिलासपुर"}
+        <Link href="/" className="min-w-fit">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+          >
+            <div className="relative w-24 sm:w-32 h-auto flex-shrink-0">
+              <Image
+                src="/logo.png"
+                alt="BNI Bilaspur South Logo"
+                width={128}
+                height={64}
+                className="object-contain w-full h-auto"
+                priority
+              />
             </div>
-            <div className="text-xs font-semibold text-accent">{language === "en" ? "Vyapar Evam Udyog Mela 2026" : "व्यापार एवं उद्योग मेला 2026"}</div>
-          </div>
-        </motion.div>
+            <div className="hidden sm:block">
+              <div className="font-bold text-sm sm:text-lg text-foreground leading-tight">
+                {language === "en" ? "BNI Bilaspur" : "बीएनआई बिलासपुर"}
+              </div>
+              <div className="text-xs font-semibold text-accent">{language === "en" ? "Vyapar Evam Udyog Mela 2026" : "व्यापार एवं उद्योग मेला 2026"}</div>
+            </div>
+          </motion.div>
+        </Link>
 
         <motion.div
           initial={{ opacity: 0, x: 20 }}

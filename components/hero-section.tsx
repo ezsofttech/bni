@@ -28,7 +28,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
   }, [])
 
   return (
-    <section ref={containerRef} className="relative w-full pt-24 sm:pt-20 pb-12 sm:pb-20 overflow-hidden">
+    <section ref={containerRef} className="relative w-full pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-20 overflow-hidden z-10">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1533542632746-8e3f6f06bec6?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
