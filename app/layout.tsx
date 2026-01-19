@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-display" })
 
 export const metadata: Metadata = {
-  title: "Title bhi bni vyapar evm Udyog mela 2026",
+  title: "BNI vyapar evm Udyog mela 2026",
   description:
     "Celebrate talent and culture at Rising Star of Bilaspur 3.0 - featuring music, dance, art, and cooking competitions.",
   generator: "v0.app",
