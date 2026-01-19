@@ -35,10 +35,11 @@ export default function EventCard({ event, language, index }: EventCardProps) {
       return "bg-orange-500/30 text-orange-500"
     if (event.titleEn.includes("Science")) return "bg-cyan-500/30 text-cyan-500"
     if (event.titleEn.includes("Marathon")) return "bg-green-500/30 text-green-500"
-    if (event.titleEn.includes("Startup")) return "bg-yellow-500/30 text-yellow-500"
+    if (event.titleEn.includes("Startup") || event.titleEn.includes("Shark Tank")) return "bg-yellow-500/30 text-yellow-500"
     if (event.titleEn.includes("Yoga")) return "bg-red-500/30 text-red-500"
     if (event.titleEn.includes("Job")) return "bg-indigo-500/30 text-indigo-500"
     if (event.titleEn.includes("Makeup") || event.titleEn.includes("MUA")) return "bg-rose-500/30 text-rose-500"
+    if (event.titleEn.includes("Peace Run") || event.titleEn.includes("Marathon")) return "bg-green-500/30 text-green-500"
     return "bg-accent/30 text-accent"
   }
 
