@@ -156,62 +156,64 @@ export const events = [
     ],
     fee: "Free",
   },
-  {
-    id: "6",
-    slug: "cooking-competition-sweet-mitha",
-    iconImage: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop",
-    titleEn: "Cooking Competition - Sweet (Mitha)",
-    titleHi: "व्यंजन प्रतियोगिता – मीठा",
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop",
-    date: "Feb 2, 2026 | 2:00 PM - 3:00 PM",
-    descriptionEn:
-      "Showcase your culinary skills with sweet dishes. Competition based on chana dal and vegetarian ingredients.",
-    descriptionHi:
-      "मीठे व्यंजनों के साथ अपने पाक कौशल का प्रदर्शन करें। चना दाल पर आधारित शाकाहारी प्रतियोगिता।",
-    rulesEn: [
-      "Category: Sweet (Mitha)",
-      "Based on chana dal and vegetarian ingredients",
-      "Minimum 50% chana dal content mandatory",
-      "Dish to be prepared at home and brought to venue",
-      "Decoration materials and written recipe mandatory",
-    ],
-    rulesHi: [
-      "वर्ग: मीठा",
-      "चना दाल पर आधारित एवं शाकाहारी",
-      "व्यंजन में चना दाल की मात्रा न्यूनतम 50% अनिवार्य",
-      "व्यंजन घर से बनाकर लाएं",
-      "सजावट सामग्री एवं विधि (रेसिपी) लिखकर लाना अनिवार्य",
-    ],
-    fee: "Free",
-  },
-  {
-    id: "7",
-    slug: "cooking-competition-salty-namkeen",
-    iconImage: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop",
-    titleEn: "Cooking Competition - Salty (Namkeen)",
-    titleHi: "व्यंजन प्रतियोगिता – नमकीन",
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop",
-    date: "Feb 2, 2026 | 3:00 PM - 4:00 PM",
-    descriptionEn:
-      "Showcase your culinary skills with savory dishes. Competition based on chana dal and vegetarian ingredients.",
-    descriptionHi:
-      "नमकीन व्यंजनों के साथ अपने पाक कौशल का प्रदर्शन करें। चना दाल पर आधारित शाकाहारी प्रतियोगिता।",
-    rulesEn: [
-      "Category: Salty (Namkeen)",
-      "Based on chana dal and vegetarian ingredients",
-      "Minimum 50% chana dal content mandatory",
-      "Dish to be prepared at home and brought to venue",
-      "Decoration materials and written recipe mandatory",
-    ],
-    rulesHi: [
-      "वर्ग: नमकीन",
-      "चना दाल पर आधारित एवं शाकाहारी",
-      "व्यंजन में चना दाल की मात्रा न्यूनतम 50% अनिवार्य",
-      "व्यंजन घर से बनाकर लाएं",
-      "सजावट सामग्री एवं विधि (रेसिपी) लिखकर लाना अनिवार्य",
-    ],
-    fee: "Free",
-  },
+{
+  id: "6",
+  slug: "iift-presents-glamora-3-fashion-show",
+  iconImage: "/Screenshot 2026-01-20 at 11.46.35 AM.png",
+  titleEn: "IIFT Presents Glamora 3.0 – Fashion Show",
+  titleHi: "आईआईएफटी प्रस्तुत करता है ग्लैमेरा 3.0 फैशन शो",
+  image: "/Screenshot 2026-01-20 at 11.46.35 AM.png",
+  date: "Jan 31, 2026 | TBA",
+  descriptionEn:
+    "Experience an evening of glamour, confidence, and style as models set the runway on fire at Glamora 3.0. A grand fashion show presented by IIFT featuring stunning outfits, themes, and performances.",
+  descriptionHi:
+    "ग्लैमेरा 3.0 में ग्लैमर, आत्मविश्वास और स्टाइल की एक शानदार शाम का अनुभव करें। IIFT द्वारा प्रस्तुत भव्य फैशन शो जिसमें शानदार परिधान, थीम्स और परफॉर्मेंस शामिल हैं।",
+  rulesEn: [
+    "Open for individual and group participants",
+    "Participants must bring their own outfits and accessories",
+    "Theme-based walk (theme will be announced on event day)",
+    "Time limit per walk will be strictly followed",
+    "Judges’ decision will be final",
+  ],
+  rulesHi: [
+    "व्यक्तिगत एवं समूह दोनों के लिए खुला",
+    "प्रतिभागी अपने परिधान और एक्सेसरीज़ स्वयं लाएँ",
+    "थीम आधारित वॉक (थीम इवेंट के दिन घोषित होगी)",
+    "प्रत्येक वॉक के लिए समय सीमा अनिवार्य",
+    "निर्णायकों का निर्णय अंतिम होगा",
+  ],
+  fee: "TBA",
+},
+
+{
+  id: "7",
+  slug: "science-exhibition",
+  iconImage: "/ed8708bd-039a-4eed-990a-c838e8b2f1e6-md.jpg",
+  titleEn: "Science Exhibition",
+  titleHi: "विज्ञान प्रदर्शनी",
+  image: "/ed8708bd-039a-4eed-990a-c838e8b2f1e6-md.jpg",
+  date: "Feb 1, 2026 | TBA",
+  descriptionEn:
+    "Students will showcase innovative science models, experiments, and working projects demonstrating scientific concepts and creativity.",
+  descriptionHi:
+    "विद्यार्थी वैज्ञानिक अवधारणाओं और रचनात्मकता को दर्शाने वाले नवाचारी विज्ञान मॉडल, प्रयोग और कार्यशील प्रोजेक्ट प्रस्तुत करेंगे।",
+  rulesEn: [
+    "Category: Science Exhibition",
+    "Individual or group participation allowed",
+    "Models can be working or non-working",
+    "Project must be student-made",
+    "Participants must explain their project to judges",
+  ],
+  rulesHi: [
+    "वर्ग: विज्ञान प्रदर्शनी",
+    "व्यक्तिगत या समूह में भागीदारी की अनुमति",
+    "मॉडल कार्यशील या स्थिर हो सकते हैं",
+    "प्रोजेक्ट छात्रों द्वारा बनाया होना चाहिए",
+    "प्रतिभागियों को जजों के सामने प्रोजेक्ट समझाना होगा",
+  ],
+  fee: "TBA",
+},
+
   {
     id: "8",
     slug: "bilaspur-master-chef",

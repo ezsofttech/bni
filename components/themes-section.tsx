@@ -39,7 +39,7 @@ const themes = [
 
 export default function ThemesSection({ language }: ThemesSectionProps) {
   return (
-    <section className="relative w-full py-12 sm:py-20 bg-gradient-to-b from-background via-accent/5 to-background">
+    <section className="relative w-full py-12 sm:py-20 bg-linear-to-b from-background via-accent/5 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

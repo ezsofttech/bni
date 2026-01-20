@@ -75,14 +75,14 @@ export default function EventDetailPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8 sm:mb-12"
         >
-          <div className="relative w-full h-64 sm:h-96 lg:h-[500px] rounded-xl sm:rounded-2xl overflow-hidden mb-6 sm:mb-8 shadow-xl">
+          <div className="relative w-full h-64 sm:h-96 lg:h-125 rounded-xl sm:rounded-2xl overflow-hidden mb-6 sm:mb-8 shadow-xl">
             <Image
               src={event.image || "/placeholder.svg"}
               alt={title}
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4">
                 {title}
@@ -142,11 +142,11 @@ export default function EventDetailPage() {
                   }`}
                 >
                   {isBulletPoint ? (
-                    <span className="text-accent font-bold text-lg sm:text-xl mt-1 flex-shrink-0">
+                    <span className="text-accent font-bold text-lg sm:text-xl mt-1 shrink-0">
                       •
                     </span>
                   ) : isNumbered ? (
-                    <span className="text-accent font-bold text-base sm:text-lg mt-1 flex-shrink-0">
+                    <span className="text-accent font-bold text-base sm:text-lg mt-1 shrink-0">
                       {rule.match(/^\d+\./)?.[0]}
                     </span>
                   ) : (
