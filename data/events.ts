@@ -135,9 +135,9 @@ export const events = [
     image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop",
     date: "Feb 1, 2026 | 2:00 PM - 3:30 PM",
     descriptionEn:
-      "Showcase your artistic skills in painting. Open to students from Class 5 to 12.",
+      "Showcase your artistic skills in painting.",
     descriptionHi:
-      "चित्रकला में अपने कलात्मक कौशल का प्रदर्शन करें। कक्षा 5 से 12 तक के छात्रों के लिए खुला।",
+      "चित्रकला में अपने कलात्मक कौशल का प्रदर्शन करें।",
     rulesEn: [
       "Time: 1.30 hours",
       "Group A: Class 5 to 8",
