@@ -110,8 +110,8 @@ export const events = [
       "युवा कलाकारों के लिए रंग भरो प्रतियोगिता। प्रतियोगिता स्थल पर छपे हुए चित्र वाली शीट दी जाएगी।",
     rulesEn: [
       "Time: 1.30 hours",
-      "Category A: Up to Class 1",
-      "Category B: Class 2 to 4",
+      "Group A: Up to Class 1",
+      "Group B: Class 2 to 4",
       "Drawing sheet with printed image will be provided",
       "Colors and other materials to be brought by participants",
       "Name, father's name, school name, and mobile number mandatory on sheet",
