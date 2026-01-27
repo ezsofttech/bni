@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description:
     "Celebrate talent and culture at Rising Star of Bilaspur 3.0 - featuring music, dance, art, and cooking competitions.",
   generator: "v0.app",
+  icons: {
+    icon: "/fav.png",
+    shortcut: "/fav.png",
+    apple: "/fav.png",
+  },
 }
 
 export default function RootLayout({
