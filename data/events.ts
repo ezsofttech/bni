@@ -140,8 +140,9 @@ export const events = [
       "चित्रकला में अपने कलात्मक कौशल का प्रदर्शन करें। कक्षा 5 से 12 तक के छात्रों के लिए खुला।",
     rulesEn: [
       "Time: 1.30 hours",
-      "Category A: Class 5 to 8",
-      "Category B: Class 9 to 12",
+      "Group A: Class 5 to 8",
+      "Group B: Class 9 to 12",
+      "Group C: College",
       "Drawing sheet will be provided",
       "Colors and other materials to be brought by participants",
       "Name, father's name, school name, and mobile number mandatory on sheet",
@@ -150,6 +151,7 @@ export const events = [
       "समय: 1.30 घंटे",
       "वर्ग (अ): कक्षा 5 से 8 तक",
       "वर्ग (ब): कक्षा 9 से 12 तक",
+      "वर्ग (स): कॉलेज",
       "ड्राइंग शीट दी जाएगी",
       "रंग एवं अन्य सामग्री प्रतिभागियों को स्वयं लानी होगी",
       "शीट पर नाम, पिता का नाम, विद्यालय का नाम एवं मोबाइल नंबर लिखना अनिवार्य",
@@ -192,7 +194,7 @@ export const events = [
   titleEn: "Science Exhibition",
   titleHi: "विज्ञान प्रदर्शनी",
   image: "/ed8708bd-039a-4eed-990a-c838e8b2f1e6-md.jpg",
-  date: "Feb 1, 2026 | TBA",
+  date: "Feb 1, 2026 | 12:00 PM",
   descriptionEn:
     "Students will showcase innovative science models, experiments, and working projects demonstrating scientific concepts and creativity.",
   descriptionHi:
