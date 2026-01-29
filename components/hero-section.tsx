@@ -79,7 +79,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
         </motion.div>
       </div>
 
-      {/* Animated background circles - hidden on mobile for performance */}
+      {/* Animated background circles - hidden on mobile for performance  */}
       <div className="absolute top-20 left-10 w-40 sm:w-64 h-40 sm:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse hidden sm:block" />
       <div className="absolute bottom-20 right-10 w-48 sm:w-80 h-48 sm:h-80 bg-accent/5 rounded-full blur-3xl animate-pulse hidden sm:block" />
     </section>

@@ -165,7 +165,7 @@ export const events = [
   titleEn: "IIFT Presents Glamora 3.0 – Fashion Show",
   titleHi: "आईआईएफटी प्रस्तुत करता है ग्लैमेरा 3.0 फैशन शो",
   image: "/Screenshot 2026-01-20 at 11.46.35 AM.png",
-  date: "Jan 31, 2026 | TBA",
+  date: "Jan 31, 2026 ",
   descriptionEn:
     "Experience an evening of glamour, confidence, and style as models set the runway on fire at Glamora 3.0. A grand fashion show presented by IIFT featuring stunning outfits, themes, and performances.",
   descriptionHi:
@@ -213,7 +213,7 @@ export const events = [
     "प्रोजेक्ट छात्रों द्वारा बनाया होना चाहिए",
     "प्रतिभागियों को जजों के सामने प्रोजेक्ट समझाना होगा",
   ],
-  fee: "TBA",
+  fee: "Free",
 },
 
   {
@@ -223,7 +223,7 @@ export const events = [
     titleEn: "Bilaspur Master Chef - Salad Decoration & No Fire Cooking",
     titleHi: "बिलासपुर मास्टर शेफ - सलाद सजावट और नो फायर कुकिंग",
     image: "/appetizing-indian-savory-dish-with-aromatic-spices.jpg",
-    date: "Feb 2, 2026 | TBA",
+    date: "Feb 2, 2026 ",
     descriptionEn:
       "Master Chef Activity featuring Salad Decoration and No Fire Cooking competitions. Open to all residents of Bilaspur.",
     descriptionHi:
@@ -246,7 +246,7 @@ export const events = [
       "निर्णायक मानदंड: रचनात्मकता और नवाचार, स्वाद, प्रस्तुति, साफ-सफाई और स्वच्छता",
       "पुरस्कार: विजेता, रनर-अप और सर्वश्रेष्ठ प्रस्तुति पुरस्कार, सभी को भागीदारी प्रमाणपत्र",
     ],
-    fee: "TBA",
+    fee: "Free",
   },
   {
     id: "9",
@@ -255,7 +255,7 @@ export const events = [
     titleEn: "MUA Masters - Makeup Artist Competition",
     titleHi: "MUA मास्टर्स - मेकअप आर्टिस्ट प्रतियोगिता",
     image: "https://plus.unsplash.com/premium_photo-1683120953880-fc8b6213b627?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: "Feb 2, 2026 | TBA",
+    date: "Feb 2, 2026 ",
     descriptionEn:
       "Professional makeup artist competition with Vyapar Mela special rules. Theme: Vyapar Mela Glam Look.",
     descriptionHi:
@@ -326,7 +326,7 @@ export const events = [
       "• Hygiene & Professionalism – 20 अंक",
       "• Overall Impact – 20 अंक",
     ],
-    fee: "TBA",
+    fee: "Free",
   },
   {
     id: "10",
@@ -449,7 +449,7 @@ export const events = [
     titleEn: "Peace Run – Gandhi Ji Martyr's Day",
     titleHi: "शांति दौड़ – गांधी जी शहीद दिवस",
     image: "https://plus.unsplash.com/premium_photo-1664304819212-911fd3b50a1a?q=80&w=2005&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: "Jan 30, 2026 | TBA",
+    date: "Jan 30, 2026 ",
     descriptionEn:
       "Peace Run from Gandhi Chowk to Science College to commemorate Mahatma Gandhi's Martyr's Day. Promoting peace, non-violence, and unity in society.",
     descriptionHi:

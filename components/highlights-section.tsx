@@ -60,7 +60,7 @@ const highlights = [
 
 export default function HighlightsSection({ language }: HighlightsSectionProps) {
   return (
-    <section className="relative w-full py-12 sm:py-20 bg-gradient-to-b from-background via-card/30 to-background">
+    <section className="relative w-full py-12 sm:py-20 bg-linear-to-b from-background via-card/30 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -85,12 +85,12 @@ export default function HighlightsSection({ language }: HighlightsSectionProps) 
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}  
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="group relative p-6 sm:p-8 bg-card border border-border rounded-xl hover:shadow-xl transition-all overflow-hidden"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${highlight.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
+              <div className={`absolute inset-0 bg-linear-to-br ${highlight.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
               <div className="relative">
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden mb-4 sm:mb-6 border border-border/50 shadow-lg">
                   <Image
